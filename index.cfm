@@ -16,9 +16,9 @@
         renderer = ITextRenderer.init();
         resolver = renderer.getFontResolver();
 
-        userFontDir = true;
+        useFontDir = true;
         fontembed = true;
-        if(userFontDir){
+        if(useFontDir){
             resolver.addFontDirectory(expandPath("fonts"),fontembed);
         }else{
             resolver.addFont(expandPath("fonts/MingLiU-01.ttf"), BaseFont.IDENTITY_H, fontembed);
