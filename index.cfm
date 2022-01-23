@@ -15,8 +15,10 @@
     try {
         renderer = ITextRenderer.init();
         resolver = renderer.getFontResolver();
-
+        
+        // you need to set useFontDir to false in order for Chinese to correctly display in pdf
         useFontDir = true;
+        
         fontembed = true;
         if(useFontDir){
             resolver.addFontDirectory(expandPath("fonts"),fontembed);
